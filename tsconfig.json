@@ -9,6 +9,23 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "paths": {
+      "lib-button": [
+        "dist/lib-button"
+      ],
+      "lib-components": [
+        "dist/lib-components"
+      ],
+      "lib-input": [
+        "dist/lib-input"
+      ],
+      "lib-text": [
+        "dist/lib-text"
+      ],
+      "lib-toast": [
+        "dist/lib-toast"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,

@@ -1,0 +1,39 @@
+input {
+  width: 350px;
+  height: 20px;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: none;
+
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: rgb(184, 184, 184);
+  transition: all 0.3s;
+
+  &.standard {
+    &:focus {
+      border-width: 0 0 3px;
+      border-color: rgb(29, 149, 196);
+    }
+  }
+
+  &.fill {
+    background-color: rgb(199, 228, 237);
+    border-radius: 10px;
+    border-width: 0;
+
+    &:focus {
+      border: 1px solid rgb(199, 228, 237);
+      background-color: transparent;
+    }
+  }
+
+  &.outline {
+    border: 1px solid rgb(29, 149, 196);
+    border-radius: 10px;
+
+    &:focus {
+      border: 2px solid rgb(29, 149, 196);
+    }
+  }
+}

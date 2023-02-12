@@ -1,0 +1,13 @@
+<div class="expand-wrapper">
+  <div [attr.class]="classHeader" (click)="openExpand()">
+    {{ headerTitle }}
+    <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+  </div>
+
+  <div [attr.class]="classBody">
+    <ng-container>
+      <ng-content></ng-content>
+    </ng-container>
+  </div>
+</div>

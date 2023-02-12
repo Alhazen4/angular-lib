@@ -1,0 +1,34 @@
+<ng-template #textContent><ng-content></ng-content></ng-template>
+<ng-template #textLabel>{{ label }}</ng-template>
+
+<p *ngIf="isText">
+  <label *ngIf="isLabeled">
+    <ng-container *ngTemplateOutlet="textLabel" ></ng-container>
+  </label>
+  <ng-container *ngTemplateOutlet="textContent"></ng-container>
+</p>
+
+<h1 *ngIf="isTitle">
+  <label *ngIf="isLabeled">
+    <ng-container *ngTemplateOutlet="textLabel" ></ng-container>
+  </label>
+  <ng-container *ngTemplateOutlet="textContent"></ng-container>
+</h1>
+
+<p *ngIf="isNumber">
+  <label *ngIf="isLabeled">
+    <ng-container *ngTemplateOutlet="textLabel" ></ng-container>
+  </label>
+  <b>
+    <ng-container *ngTemplateOutlet="textContent"></ng-container>
+  </b>
+</p>
+
+<p *ngIf="isChip">
+  <label *ngIf="isLabeled">
+    <ng-container *ngTemplateOutlet="textLabel" ></ng-container>
+  </label>
+  <b class="text-chip">
+    <ng-container *ngTemplateOutlet="textContent"></ng-container>
+  </b>
+</p>
