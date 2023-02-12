@@ -13,6 +13,13 @@ export class AppComponent {
   buttonVariant: string = 'success';
   buttonText: string = 'Text Button';
 
+  buttonStatus: string = '';
+  buttonOutStatus: string = '';
+
+  inputText: string = 'Input Type Text';
+  inputNumber: number = 12345;
+  inputPassword: string = 'Pasword';
+
   ngOnInit() {
     document.body.style.margin = '0';
   }
@@ -21,21 +28,19 @@ export class AppComponent {
     console.log(this.buttonVariant);
   }
 
-  c(e: any) {
-    console.log(e.target.value);
-  }
-
-  activateToast() {
-    if (!this.toastActive) {
-      this.display = 'none';
-      this.toastActive = true;
+  btnClick() {
+    if (this.buttonStatus === '') {
+      this.buttonStatus = 'Button Clicked!';
     } else {
-      this.display = 'block';
-      this.toastActive = false;
+      this.buttonStatus = '';
     }
   }
 
-  func() {
-    console.log('Active');
+  btnOutClick() {
+    if (this.buttonOutStatus === '') {
+      this.buttonOutStatus = 'Button Outline Clicked!';
+    } else {
+      this.buttonOutStatus = '';
+    }
   }
 }

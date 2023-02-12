@@ -2,46 +2,131 @@
 
   <div class="div welcome">
     <div class="content">
-      <h1>Welcome to Angular lib-project</h1>
-      <div class="content-row">
-        <h1>Installation</h1>
-      </div>
+      <h1 class="welcome-title">Welcome to Angular lib-project</h1>
+          <h2 class="welcome-title">Install this code in your project</h2>
+          <code>
+            npm i @cybernonk404/lib-components
+          </code>
     </div>
   </div>
 
   <div class="div button" id="div-button">
     <div class="content">
-      <h3>Button</h3>
+      <h1>Button</h1>
 
-      <lib-button variant="primary" (click)="func()">Button</lib-button>
+      <div class="content-row">
+        <lib-button variant="primary" (click)="btnClick()">Primary</lib-button>
+        <lib-button variant="secondary" (click)="btnClick()">Secondary</lib-button>
+        <lib-button variant="success" (click)="btnClick()">Success</lib-button>
+        <lib-button variant="warning" (click)="btnClick()">Warning</lib-button>
+        <lib-button variant="danger" (click)="btnClick()">Danger</lib-button>
+        <lib-button variant="disabled" (click)="btnClick()">Disabled</lib-button>
+      </div>
+
+      <h3 class="btn-status">{{ buttonStatus }}</h3>
+
       <code>
-        &lt;lib-button variant="primary" (click)="func()"&gt;Button&lt;/lib-button&gt;
+        &lt;lib-button variant="primary""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="secondary""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="success""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="warning""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="danger""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="disabled""&gt;Button&lt;/lib-button&gt;<br>
       </code>
-      <lib-button variant="secondary" (click)="func()">Button</lib-button>
+
+      <h1>Button Outline</h1>
+
+      <div class="content-row">
+        <lib-button variant="primary-outline" (click)="btnOutClick()">Primary</lib-button>
+        <lib-button variant="secondary-outline" (click)="btnOutClick()">Secondary</lib-button>
+        <lib-button variant="success-outline" (click)="btnOutClick()">Success</lib-button>
+        <lib-button variant="warning-outline" (click)="btnOutClick()">Warning</lib-button>
+        <lib-button variant="danger-outline" (click)="btnOutClick()">Danger</lib-button>
+        <lib-button variant="disabled-outline" (click)="btnOutClick()">Disabled</lib-button>
+      </div>
+
+      <h3 class="btn-status">{{ buttonOutStatus }}</h3>
+
       <code>
-        &lt;lib-button variant="secondary" (click)="func()"&gt;Button&lt;/lib-button&gt;
-      </code>
-      <lib-button variant="success" (click)="func()">Button</lib-button>
-      <code>
-        &lt;lib-button variant="success" (click)="func()"&gt;Button&lt;/lib-button&gt;
+        &lt;lib-button variant="primary-outline""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="secondary-outline""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="success-outline""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="warning-outline""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="danger-outline""&gt;Button&lt;/lib-button&gt;<br>
+        &lt;lib-button variant="disabled-outline""&gt;Button&lt;/lib-button&gt;<br>
       </code>
     </div>
   </div>
 
   <div class="div text">
-    <lib-text variant="text" label="Label Chip">This is chip variant</lib-text>
+    <div class="content">
+      <h1>Text</h1>
+      <lib-text variant="text" label="Label Text">This is text variant</lib-text>
+      <code>
+        &lt;lib-text variant="text" label="Label Text"&gt;This is text variant&lt;/lib-text&gt;
+      </code>
+
+      <lib-text variant="title" label="Label Title">This is title variant</lib-text>
+      <code>
+        &lt;lib-text variant="title" label="Label Title"&gt;This is Title variant&lt;/lib-text&gt;
+      </code>
+
+      <lib-text variant="number" label="Label Number">This is number variant</lib-text>
+      <code>
+        &lt;lib-text variant="number" label="Label Number"&gt;This is Number variant&lt;/lib-text&gt;
+      </code>
+
+      <lib-text variant="chip" label="Label Chip">This is chip variant</lib-text>
+      <code>
+        &lt;lib-text variant="chip" label="Label Chip"&gt;This is Chip variant&lt;/lib-text&gt;
+      </code>
+
+      <lib-text variant="text">This is text without label variant</lib-text>
+      <code>
+        &lt;lib-text variant="text"&gt;This is text without label variant&lt;/lib-text&gt;
+      </code>
+    </div>
   </div>
 
   <div class="div input">
-    <lib-input variant="fill" inputType="text"></lib-input>
+    <div class="content">
+      <h1>Input Field & Type</h1>
+      <lib-input variant="standard" inputType="text" [(ngModel)]="inputText"></lib-input>
+      <code style="margin-top: 10px;">
+        &lt;lib-input variant="standard" inputType="text" [(ngModel)]="inputText"&lt;/lib-text&gt;
+      </code>
+
+      <lib-input variant="fill" inputType="number" [(ngModel)]="inputNumber"></lib-input>
+      <code style="margin-top: 10px;">
+        &lt;lib-input variant="fill" inputType="number" [(ngModel)]="inputNumber"&lt;/lib-text&gt;
+      </code>
+
+      <lib-input variant="outline" inputType="password" [(ngModel)]="inputPassword"></lib-input>
+      <code style="margin-top: 10px;">
+        &lt;lib-input variant="outline" inputType="password" [(ngModel)]="inputPassword"&lt;/lib-text&gt;
+      </code>
+    </div>
   </div>
 
   <div class="div expand">
-    <lib-expand headerTitle="Expand Title">
-      <div style="display: flex; flex-direction: column; gap: 10px;">
-        <lib-button color="red">Red button</lib-button>
-        <img src="https://source.unsplash.com/-UdYbiywGeg" alt="...">
-      </div>
-    </lib-expand>
+    <div class="content">
+      <h1 style="margin-bottom: 20px;">Expand</h1>
+      <lib-expand headerTitle="Expand Title">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <lib-button color="red">Red button</lib-button>
+          <img src="https://source.unsplash.com/-UdYbiywGeg" alt="...">
+        </div>
+      </lib-expand>
+      <code style="margin-top: 10px;">
+        <pre>
+&lt;lib-expand headerTitle="Expand Title"&gt;
+  &lt;div style="display: flex; flex-direction: column; gap: 10px;"&gt;
+    &lt;lib-button color="red&gt; Red button &lt;/lib-button&gt;
+    &lt;img src="https://source.unsplash.com/-UdYbiywGeg" alt="..."&gt;
+  &lt;/div&gt;
+&lt;/lib-expand&gt;
+        </pre>
+      </code>
+    </div>
   </div>
 </div>
