@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { LibComponentsComponent } from './lib-components.component';
 import { LibButtonComponent } from './lib-button/lib-button.component';
@@ -19,6 +20,7 @@ import { LibExpandComponent } from './lib-expand/lib-expand.component';
   imports: [
     CommonModule,
     BrowserModule,
+    FormsModule,
   ],
   exports: [
     LibComponentsComponent,

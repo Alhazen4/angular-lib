@@ -11,6 +11,8 @@ input {
   transition: all 0.3s;
 
   &.standard {
+    background-color: transparent;
+
     &:focus {
       border-width: 0 0 3px;
       border-color: rgb(29, 149, 196);

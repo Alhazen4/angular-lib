@@ -10,6 +10,21 @@ export class AppComponent {
   toastActive: boolean = false;
   display: string = 'none';
 
+  buttonVariant: string = 'success';
+  buttonText: string = 'Text Button';
+
+  ngOnInit() {
+    document.body.style.margin = '0';
+  }
+
+  ngOnChange() {
+    console.log(this.buttonVariant);
+  }
+
+  c(e: any) {
+    console.log(e.target.value);
+  }
+
   activateToast() {
     if (!this.toastActive) {
       this.display = 'none';
