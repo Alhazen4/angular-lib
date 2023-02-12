@@ -7,6 +7,16 @@
           <code>
             npm i @cybernonk404/lib-components
           </code>
+          <h2 class="welcome-title">import the module in app.module.ts</h2>
+          <textarea class="code" readonly>
+import { LibComponentsModule } from '@cybernonk404/lib-components';
+
+@NgModule({
+  imports: [
+    LibComponentsModule
+  ],
+})
+          </textarea>
     </div>
   </div>
 
@@ -113,7 +123,7 @@
       <h1 style="margin-bottom: 20px;">Expand</h1>
       <lib-expand headerTitle="Expand Title">
         <div style="display: flex; flex-direction: column; gap: 10px;">
-          <lib-button color="red">Red button</lib-button>
+          <lib-button variant="primary">Button</lib-button>
           <img src="https://source.unsplash.com/-UdYbiywGeg" alt="...">
         </div>
       </lib-expand>
@@ -121,7 +131,7 @@
         <pre>
 &lt;lib-expand headerTitle="Expand Title"&gt;
   &lt;div style="display: flex; flex-direction: column; gap: 10px;"&gt;
-    &lt;lib-button color="red&gt; Red button &lt;/lib-button&gt;
+    &lt;lib-button variant="primary"&gt; Button &lt;/lib-button&gt;
     &lt;img src="https://source.unsplash.com/-UdYbiywGeg" alt="..."&gt;
   &lt;/div&gt;
 &lt;/lib-expand&gt;
