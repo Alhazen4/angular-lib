@@ -22,11 +22,6 @@
       background-color: rgb(207, 233, 255);
     }
 
-    & span {
-      rotate: 0;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
     &-active {
       width: 500px;
       background-color: rgb(162, 207, 247);
@@ -40,12 +35,6 @@
 
       display: flex;
       justify-content: space-between;
-
-      & span {
-        rotate: 180deg;
-        transition: all 0.3s;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
     }
   }
 
