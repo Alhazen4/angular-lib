@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
-import { LibComponentsModule } from 'lib-components';
+// import { LibComponentsModule } from 'lib-components';
+import { LibComponentsModule } from "@cybernonk404/lib-components";
 
 @NgModule({
   declarations: [
